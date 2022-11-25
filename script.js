@@ -121,7 +121,7 @@ btnGoal.addEventListener("click", function(){
     if(!setGoal){
         
         goal=prompt("Set Your Target Score");
-        console.log(goal);
+        
 
     
         if(goal===null || goal===""){
