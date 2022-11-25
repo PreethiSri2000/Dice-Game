@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dice Game</title>
+  </head>
+  <body>
+    <main>
+      <section class="player player--0 player--active">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">43</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">24</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <img src="dice-5.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📥 Hold</button>
+      <button class="btn btn--inst">👩‍🏫Instructions</button>
+      <button class="btn btn--goal">🎯Target Score</button>
+
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <h1>Game Instructions</h1>
+        <p>
+          <ol>
+            <li>Two Players can play the game. First choose the player.</li>
+            <li>Set your target score. Without target score you can't play the game.</li>
+            <li>After setting the target score, start to roll the dice.</li>
+            <li>Player 1 will always starts the game.</li>
+            <li>If you want to add the current score to your Score, press hold.</li>
+            <li>Once you pressed the Hold, the player's turn will be switched.</li>
+            <li>If "1" occured in the dice, player's turn will be switched.</li>
+            <li>The player who reached the target score or more than that first, will win the game.</li>
+          </ol>
+        </p>
+      </div>
+      <div class="overlay hidden"></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
